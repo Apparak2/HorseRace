@@ -2576,6 +2576,7 @@ GameObject:
   - component: {fileID: 1125537526}
   - component: {fileID: 1125537525}
   - component: {fileID: 1125537524}
+  - component: {fileID: 1125537527}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2650,13 +2651,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125537523}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: 0, y: 4.5, z: -7}
+  m_LocalRotation: {x: 0.10865009, y: -0, z: -0, w: 0.99408007}
+  m_LocalPosition: {x: 0, y: 7.07, z: -11.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.475, y: 0, z: 0}
+--- !u!114 &1125537527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125537523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6a369d784411747b614aaf55273aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraMovement
+  _transformPlayer: {fileID: 1705133638}
+  _offset: {x: 0, y: 7.07, z: -11.96}
 --- !u!4 &1175357112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 570426054858148555, guid: 39c74c1025e00fa48ada3437fbef223a, type: 3}
@@ -4634,8 +4649,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862ef062c10762d4fa6d8848129ddcc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  _speed: 10.2
+  _speed: 10
   _rbPlayer: {fileID: 1705133634}
+--- !u!4 &1705133638 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3659140983634492443, guid: 4241fc939cf24a740983092f2aed5837, type: 3}
+  m_PrefabInstance: {fileID: 2035664317}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1794031317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3985853836440573454, guid: 8397a63b6f6029c4883b55fa20d86ae2, type: 3}

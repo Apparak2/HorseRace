@@ -8,12 +8,22 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _rbPlayer.AddForce(0.0f, 0.0f, 300.0f);
+        
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        //AddForce stabilise déjà avec Time.FixedDeltaTime
+            _rbPlayer.AddForce(0.0f, 0.0f, _speed);
+
+        if (Input.GetKey(KeyCode.Q))
+        {
+            _rbPlayer.AddForce(_speed*-1, 0.0f, 0.0f);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            _rbPlayer.AddForce(_speed, 0.0f, 0.0f);
+        }
     }
 }
